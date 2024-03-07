@@ -1,36 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Button</title>
-</head>
+<html>
 <body>
-    <h1>Toggle Button</h1>
-    
-    <!-- Button element -->
-    <button id="toggleButton">Toggle</button>
-
-    <!-- Script to toggle value -->
-    <script>
-        // Get the button element
-        var button = document.getElementById('toggleButton');
-
-        // Variable to hold the state
-        var isOn = false;
-
-        // Add event listener to the button
-        button.addEventListener('click', function() {
-            // Toggle the value
-            isOn = !isOn;
-
-            // Log the state
-            if (isOn) {
-                console.log('Value is 1');
-            } else {
-                console.log('Value is 0');
-            }
-        });
-    </script>
+<form action="./lighton">
+<input type="submit" value="Light on" />
+</form>
+<form action="./lightoff">
+<input type="submit" value="Light off" />
+</form>
 </body>
 </html>
